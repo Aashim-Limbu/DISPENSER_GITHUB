@@ -15,3 +15,4 @@ export const app = new App({
     secret: webhookSecret,
   },
 });
+import "./webhook";

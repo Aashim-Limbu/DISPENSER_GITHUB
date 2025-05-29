@@ -18,9 +18,7 @@ app.webhooks.on("issue_comment.created", ({ octokit, payload }) => {
   const amount = parseFloat(match[1]);
   const reciever = match[2];
 
-  console.log(
-    `Boundty Command Detected! Amount: ${amount} ETH to @${reciever}`
-  );
+  console.log(`Bounty Command Detected! Amount: ${amount} ETH to @${reciever}`);
 });
 
 app.webhooks.on("pull_request.opened", handlePullRequestOpened);

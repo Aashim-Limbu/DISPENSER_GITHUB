@@ -1,5 +1,3 @@
-import { EmitterWebhookEvent } from "@octokit/webhooks";
-import { Octokit } from "octokit";
 import { WebhookHandlerArgs } from "../../types/WebHookHandlers";
 
 export type PullRequestOpenedEvent = WebhookHandlerArgs<"pull_request.opened">;
